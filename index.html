@@ -1,14 +1,10 @@
 <!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Candi Project Ethernet</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <!-- main css -->
-    <link rel="stylesheet" href="assets/css/main.css">
+<html>
+  <head>
+    <title>Site Maintenance</title>
+    <meta charset="utf-8"/>
+    <meta name="robots" content="noindex"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
       body { text-align: center; padding: 20px; font: 20px Helvetica, sans-serif; color: #efe8e8; }
       @media (min-width: 768px){
@@ -16,33 +12,20 @@
       }
       h1 { font-size: 50px; }
       article { display: block; text-align: left; max-width: 650px; margin: 0 auto; }
-      a { color: #6638EB; text-decoration: none; }
-      a:hover { color: #FFD200; text-decoration: none; }
+      a { color: #dc8100; text-decoration: none; }
+      a:hover { color: #efe8e8; text-decoration: none; }
     </style>
-</head>
-
-<body>
-    <!-- navbar section -->
-    <nav class="navbar navbar-expand-lg bg-white">
-        <div class="container">
-            <a class="navbar-brand" href="#">Candi Project Ethernet</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="https://wa.me/+6289618748113">Contact</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- content section -->
-    <section class="content">
-        <img src="assets/img/illustration.svg" alt="img">
-        <div class="text">
-            <h1>Oops! SEDANG PERBAIKAN SERVER</h1>
-            <p class="w-80">Kami mohon maaf Atas Ketidaknyamanan ini, internet kembali nyala seperti waktu yang telah ditentukan.</p>
+  </head>
+  <body bgcolor="2e2929">
+    <article>
+        <h2>Oops! SEDANG PERBAIKAN SERVER</h2>
+        <div><center>
+			<img align="center" src="https://raw.githubusercontent.com/rizkybagus28/jserror.github.io/master/illustration.svg" />
+			</div>
+        <div>
+            <p>Kami mohon maaf Atas Ketidaknyamanan ini, internet kembali nyala seperti waktu yang telah ditentukan. Jika tidak <a href="mailto:candiprojectinternet@email.com">Kontak Kami</a>,kami akan segera kembali online!</p>
+            <p>&copy; Copyright 2022 Candi Project Ethernet</p>
+            
         </div>
         <div style="display: flex; flex-direction: row; justify-content: space-between;">
             <p class="day"></p>
@@ -50,9 +33,10 @@
             <p class="minute"></p>
             <p class="second"></p>
         </div>
+    </article>
     <script>
         const countDown = () => {
-            const countDay = new Date('September 1, 2022 00:00:00');
+            const countDay = new Date('August 30, 2022 00:00:00');
             const now = new Date();
             const counter = countDay - now;
             const second = 1000;
@@ -70,17 +54,5 @@
         }
         setInterval(countDown, 1000);
     </script>
-    </section>
-    <!-- footer section -->
-    <footer>
-        <div class="container">
-            <hr>
-            <p>© 2022 · Candi Project Ethernet</p>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-</body>
-
+  </body>
 </html>

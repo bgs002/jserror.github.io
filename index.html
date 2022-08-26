@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Candi Project Ethernet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+      body { text-align: center; padding: 20px; font: 20px Helvetica, sans-serif; color: #efe8e8; }
+      @media (min-width: 768px){
+        body{ padding-top: 150px; }
+      }
+      h1 { font-size: 50px; }
+      article { display: block; text-align: left; max-width: 650px; margin: 0 auto; }
+      a { color: #6638EB; text-decoration: none; }
+      a:hover { color: #FFD200; text-decoration: none; }
+    </style>
+</head>
+
+<body>
+    <!-- navbar section -->
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">Candi Project Ethernet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="https://wa.me/+6289618748113">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- content section -->
+    <section class="content">
+        <img src="assets/img/illustration.svg" alt="img">
+        <div class="text">
+            <h1>Oops! SEDANG PERBAIKAN SERVER</h1>
+            <p class="w-80">Kami mohon maaf Atas Ketidaknyamanan ini, internet kembali nyala seperti waktu yang telah ditentukan.</p>
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <p class="day"></p>
+            <p class="hour"></p>
+            <p class="minute"></p>
+            <p class="second"></p>
+        </div>
+    <script>
+        const countDown = () => {
+            const countDay = new Date('September 1, 2022 00:00:00');
+            const now = new Date();
+            const counter = countDay - now;
+            const second = 1000;
+            const minute = second * 60;
+            const hour = minute * 60;
+            const day = hour * 24;
+            const textDay = Math.floor(counter / day);
+            const textHour = Math.floor((counter % day) / hour);
+            const textMinute = Math.floor((counter % hour) / minute);
+            const textSecond = Math.floor((counter % minute) / second)
+            document.querySelector(".day").innerText = textDay + ' Days';
+            document.querySelector(".hour").innerText = textHour + ' Hours';
+            document.querySelector(".minute").innerText = textMinute + ' Minutes';
+            document.querySelector(".second").innerText = textSecond + ' Seconds';
+        }
+        setInterval(countDown, 1000);
+    </script>
+    </section>
+    <!-- footer section -->
+    <footer>
+        <div class="container">
+            <hr>
+            <p>© 2022 · Candi Project Ethernet</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
